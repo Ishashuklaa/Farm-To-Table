@@ -21,6 +21,7 @@ import Shop from './components/Shop';
 import ContactUs from './components/ContactUs.js';
 import SignupForm from './components/UsersForm/signup.js';
 import LoginForm from './components/UsersForm/login.js';
+import Dashboard from './components/Dashboard.js';
 
 const App = () => {
   return (
@@ -89,6 +90,7 @@ const App = () => {
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path='/signup' element={<SignupForm/>}/>
           <Route path='/login' element={<LoginForm/>}/>
+          <Route path='/Dashboard' element={<Dashboard/>}/>
       
         </Routes>
 

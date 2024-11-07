@@ -3,7 +3,7 @@ import { Heart, ShoppingCart, User } from 'lucide-react';
 import log from './logo1.png';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({ onProfileClick }) => {
   const handleCategoryClick = () => {
     const element = document.getElementById('shop-by-category');
     if (element) {
@@ -35,13 +35,18 @@ const Header = () => {
           <li><Link to="/shop">Shop</Link></li>
           <li><a href="#shop-by-category" onClick={handleCategoryClick}>Category</a></li>
           <li><a href="#testimonials" onClick={handleTestimonialsClick}>Testimonials</a></li>
-          <li><a href="/contact-us">Contact Us</a></li>
+          <li><Link to="/contact-us">Contact Us</Link></li>
         </ul>
       </nav>
       <div className="icons">
         <Heart />
         <ShoppingCart />
-        <User />
+        {/* Linking profile icon to Dashboard */}
+        <Link to="/dashboard">
+          <div className="profile-icon">
+            <User size={24} />
+          </div>
+        </Link>
       </div>
     </header>
   );
