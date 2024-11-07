@@ -28,15 +28,6 @@ const App = () => {
       <div className="app">
         <Header />
 
-        {/* Navigation Links */}
-        {/* <nav>
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about-us">About Us</Link></li>
-            <li><Link to="/shop">Shop</Link></li>
-            <li><Link to="/contact-us">Contact Us</Link></li>
-          </ul>
-        </nav> */}
 
         <Routes>
           {/* Home page */}

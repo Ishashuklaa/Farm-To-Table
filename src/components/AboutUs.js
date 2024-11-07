@@ -11,7 +11,7 @@ const AboutUs = () => {
   return (
     <div className="about-us">
       <div className="about-us-hero">
-        <h1>About FarmToTable</h1>
+        
         <p>Connecting farmers with consumers for fresh, organic, and locally grown products.</p>
       </div>
 
